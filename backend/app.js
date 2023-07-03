@@ -4,7 +4,6 @@ const userRouter = require('./routes/userRoute')
 const cors = require('cors')
 const app = express();
 
-
 app.use(cors(
     {
         origin: ["https://leaderboard-ivory.vercel.app/"],
