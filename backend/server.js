@@ -1,6 +1,5 @@
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
-const morgan = require('morgan')
 dotenv.config({ path: './.env' });
 const app = require('./app');
 
@@ -10,13 +9,8 @@ process.on('uncaughtException', (err) => {
   process.exit(1);
 });
 
-const DB = process.env.DATABASE_URL.replace(
-  '<password>',
-  process.env.DATABASE_PASSWORD,
-);
-
 mongoose
-  .connect(DB)
+  .connect(process.env.DATABASE_URL)
   .then(() => console.log('DB connection  successfulyy'));
 
 const port = process.env.PORT || 3000;
