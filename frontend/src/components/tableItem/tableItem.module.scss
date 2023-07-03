@@ -1,0 +1,25 @@
+.itemWrapper {
+  height: 60px;
+  display: grid;
+  grid-template-columns: 1fr 5fr 5fr 5fr 1fr;
+  justify-items: center;
+  align-items: center;
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.iconWrapper {
+  cursor: pointer;
+
+  &:hover {
+    svg {
+      scale: 1.05;
+      color: #42a5f5;
+      transition: all ease-in-out 0.2s;
+    }
+  }
+}
+
+.itemSection {
+  //display: flex;
+}
