@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
-    "run-server": "node server.js"
+    "start": "nodemon index.js",
+    "run-server": "node index.js"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "author": "dmitry",
   "license": "ISC",
