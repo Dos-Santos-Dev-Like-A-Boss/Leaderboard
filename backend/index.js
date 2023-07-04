@@ -15,6 +15,8 @@ mongoose
 
 
 const port = process.env.PORT || 3030;
-const index = app.listen(port, (req, res) => {
+app.listen(port, (req, res) => {
   console.log(`app running at port ${port}...`);
 });
+
+module.exports = app;
