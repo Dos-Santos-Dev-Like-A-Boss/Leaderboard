@@ -5,6 +5,7 @@ const cors = require('cors')
 const app = express();
 
 app.use(cors(
+
     {
         origin: ["https://leaderboard-ivory.vercel.app/"],
         methods: ['GET', 'PUT', 'POST', 'DELETE', 'PATCH']
